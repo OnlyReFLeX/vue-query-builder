@@ -5,8 +5,8 @@
         <div :class="{ 'form-group': styled }">
           <label for="vqb-match-type">{{ labels.matchType }}</label>
           <select id="vqb-match-type" :class="{ 'form-control': styled }" v-model="query.logicalOperator">
-            <option>{{ labels.matchTypeAll }}</option>
-            <option>{{ labels.matchTypeAny }}</option>
+            <option :value="labels.matchTypeAll.value" >{{ labels.matchTypeAll.label }}</option>
+            <option :value="labels.matchTypeAny.value" >{{ labels.matchTypeAny.label }}</option>
           </select>
         </div>
         <button type="button" :class="{ 'close pull-right': styled }" v-if="this.depth > 1" @click="remove" v-html="labels.removeGroup"></button>
@@ -121,7 +121,7 @@ export default {
 
   data () {
     return {
-      selectedRule: this.rules[0]
+      selectedRule: this.rules[0].value
     }
   },
 

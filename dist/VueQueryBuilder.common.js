@@ -2146,12 +2146,12 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"0f87e5ee-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/VueQueryBuilder.vue?vue&type=template&id=7eeb2cfc&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"0f87e5ee-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/VueQueryBuilder.vue?vue&type=template&id=39a8566b&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"vue-query-builder",class:{ 'vue-query-builder-styled': _vm.styled }},[_c('query-builder-group',{attrs:{"index":0,"query":_vm.query,"ruleTypes":_vm.ruleTypes,"rules":_vm.mergedRules,"maxDepth":_vm.maxDepth,"depth":_vm.depth,"styled":_vm.styled,"labels":_vm.mergedLabels,"type":"query-builder-group"},on:{"update:query":function($event){_vm.query=$event}}})],1)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/VueQueryBuilder.vue?vue&type=template&id=7eeb2cfc&
+// CONCATENATED MODULE: ./src/VueQueryBuilder.vue?vue&type=template&id=39a8566b&
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/web.dom.iterable.js
 var web_dom_iterable = __webpack_require__("ac6a");
@@ -2165,12 +2165,12 @@ var es6_number_constructor = __webpack_require__("c5f6");
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es6.promise.js
 var es6_promise = __webpack_require__("551c");
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"0f87e5ee-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/QueryBuilderGroup.vue?vue&type=template&id=22b1771e&
-var QueryBuilderGroupvue_type_template_id_22b1771e_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"vqb-group",class:_vm.classObject},[_c('div',{staticClass:"vqb-group-heading",class:{ 'panel-heading': _vm.styled }},[_c('div',{staticClass:"match-type-container",class:{ 'form-inline': _vm.styled }},[_c('div',{class:{ 'form-group': _vm.styled }},[_c('label',{attrs:{"for":"vqb-match-type"}},[_vm._v(_vm._s(_vm.labels.matchType))]),_c('select',{directives:[{name:"model",rawName:"v-model",value:(_vm.query.logicalOperator),expression:"query.logicalOperator"}],class:{ 'form-control': _vm.styled },attrs:{"id":"vqb-match-type"},on:{"change":function($event){var $$selectedVal = Array.prototype.filter.call($event.target.options,function(o){return o.selected}).map(function(o){var val = "_value" in o ? o._value : o.value;return val}); _vm.$set(_vm.query, "logicalOperator", $event.target.multiple ? $$selectedVal : $$selectedVal[0])}}},[_c('option',[_vm._v(_vm._s(_vm.labels.matchTypeAll))]),_c('option',[_vm._v(_vm._s(_vm.labels.matchTypeAny))])])]),(this.depth > 1)?_c('button',{class:{ 'close pull-right': _vm.styled },attrs:{"type":"button"},domProps:{"innerHTML":_vm._s(_vm.labels.removeGroup)},on:{"click":_vm.remove}}):_vm._e()])]),_c('div',{staticClass:"vqb-group-body",class:{ 'panel-body': _vm.styled }},[_c('div',{staticClass:"rule-actions",class:{ 'form-inline': _vm.styled }},[_c('div',{class:{ 'form-group': _vm.styled }},[_c('select',{directives:[{name:"model",rawName:"v-model",value:(_vm.selectedRule),expression:"selectedRule"}],class:{ 'form-control': _vm.styled },on:{"change":function($event){var $$selectedVal = Array.prototype.filter.call($event.target.options,function(o){return o.selected}).map(function(o){var val = "_value" in o ? o._value : o.value;return val}); _vm.selectedRule=$event.target.multiple ? $$selectedVal : $$selectedVal[0]}}},_vm._l((_vm.rules),function(rule,index){return _c('option',{key:index,domProps:{"value":rule}},[_vm._v(_vm._s(rule.label))])})),_c('button',{class:{ 'btn btn-default': _vm.styled },attrs:{"type":"button"},domProps:{"innerHTML":_vm._s(_vm.labels.addRule)},on:{"click":_vm.addRule}}),(this.depth < this.maxDepth)?_c('button',{class:{ 'btn btn-default': _vm.styled },attrs:{"type":"button"},domProps:{"innerHTML":_vm._s(_vm.labels.addGroup)},on:{"click":_vm.addGroup}}):_vm._e()])]),_c('div',{staticClass:"children"},_vm._l((_vm.query.children),function(child,index){return _c(child.type,{key:index,tag:"component",attrs:{"type":child.type,"query":child.query,"ruleTypes":_vm.ruleTypes,"rules":_vm.rules,"rule":_vm.ruleById(child.query.rule),"index":index,"maxDepth":_vm.maxDepth,"depth":_vm.depth + 1,"styled":_vm.styled,"labels":_vm.labels},on:{"update:query":function($event){_vm.$set(child, "query", $event)},"child-deletion-requested":_vm.removeChild}})}))])])}
-var QueryBuilderGroupvue_type_template_id_22b1771e_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"0f87e5ee-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/QueryBuilderGroup.vue?vue&type=template&id=0c07deba&
+var QueryBuilderGroupvue_type_template_id_0c07deba_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"vqb-group",class:_vm.classObject},[_c('div',{staticClass:"vqb-group-heading",class:{ 'panel-heading': _vm.styled }},[_c('div',{staticClass:"match-type-container",class:{ 'form-inline': _vm.styled }},[_c('div',{class:{ 'form-group': _vm.styled }},[_c('label',{attrs:{"for":"vqb-match-type"}},[_vm._v(_vm._s(_vm.labels.matchType))]),_c('select',{directives:[{name:"model",rawName:"v-model",value:(_vm.query.logicalOperator),expression:"query.logicalOperator"}],class:{ 'form-control': _vm.styled },attrs:{"id":"vqb-match-type"},on:{"change":function($event){var $$selectedVal = Array.prototype.filter.call($event.target.options,function(o){return o.selected}).map(function(o){var val = "_value" in o ? o._value : o.value;return val}); _vm.$set(_vm.query, "logicalOperator", $event.target.multiple ? $$selectedVal : $$selectedVal[0])}}},[_c('option',{domProps:{"value":_vm.labels.matchTypeAll.value}},[_vm._v(_vm._s(_vm.labels.matchTypeAll.label))]),_c('option',{domProps:{"value":_vm.labels.matchTypeAny.value}},[_vm._v(_vm._s(_vm.labels.matchTypeAny.label))])])]),(this.depth > 1)?_c('button',{class:{ 'close pull-right': _vm.styled },attrs:{"type":"button"},domProps:{"innerHTML":_vm._s(_vm.labels.removeGroup)},on:{"click":_vm.remove}}):_vm._e()])]),_c('div',{staticClass:"vqb-group-body",class:{ 'panel-body': _vm.styled }},[_c('div',{staticClass:"rule-actions",class:{ 'form-inline': _vm.styled }},[_c('div',{class:{ 'form-group': _vm.styled }},[_c('select',{directives:[{name:"model",rawName:"v-model",value:(_vm.selectedRule),expression:"selectedRule"}],class:{ 'form-control': _vm.styled },on:{"change":function($event){var $$selectedVal = Array.prototype.filter.call($event.target.options,function(o){return o.selected}).map(function(o){var val = "_value" in o ? o._value : o.value;return val}); _vm.selectedRule=$event.target.multiple ? $$selectedVal : $$selectedVal[0]}}},_vm._l((_vm.rules),function(rule,index){return _c('option',{key:index,domProps:{"value":rule}},[_vm._v(_vm._s(rule.label))])})),_c('button',{class:{ 'btn btn-default': _vm.styled },attrs:{"type":"button"},domProps:{"innerHTML":_vm._s(_vm.labels.addRule)},on:{"click":_vm.addRule}}),(this.depth < this.maxDepth)?_c('button',{class:{ 'btn btn-default': _vm.styled },attrs:{"type":"button"},domProps:{"innerHTML":_vm._s(_vm.labels.addGroup)},on:{"click":_vm.addGroup}}):_vm._e()])]),_c('div',{staticClass:"children"},_vm._l((_vm.query.children),function(child,index){return _c(child.type,{key:index,tag:"component",attrs:{"type":child.type,"query":child.query,"ruleTypes":_vm.ruleTypes,"rules":_vm.rules,"rule":_vm.ruleById(child.query.rule),"index":index,"maxDepth":_vm.maxDepth,"depth":_vm.depth + 1,"styled":_vm.styled,"labels":_vm.labels},on:{"update:query":function($event){_vm.$set(child, "query", $event)},"child-deletion-requested":_vm.removeChild}})}))])])}
+var QueryBuilderGroupvue_type_template_id_0c07deba_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/QueryBuilderGroup.vue?vue&type=template&id=22b1771e&
+// CONCATENATED MODULE: ./src/components/QueryBuilderGroup.vue?vue&type=template&id=0c07deba&
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es6.regexp.to-string.js
 var es6_regexp_to_string = __webpack_require__("6b54");
@@ -2591,7 +2591,7 @@ component.options.__file = "QueryBuilderRule.vue"
   },
   data: function data() {
     return {
-      selectedRule: this.rules[0]
+      selectedRule: this.rules[0].value
     };
   },
   computed: {
@@ -2616,8 +2616,8 @@ component.options.__file = "QueryBuilderRule.vue"
 
 var QueryBuilderGroup_component = normalizeComponent(
   components_QueryBuilderGroupvue_type_script_lang_js_,
-  QueryBuilderGroupvue_type_template_id_22b1771e_render,
-  QueryBuilderGroupvue_type_template_id_22b1771e_staticRenderFns,
+  QueryBuilderGroupvue_type_template_id_0c07deba_render,
+  QueryBuilderGroupvue_type_template_id_0c07deba_staticRenderFns,
   false,
   null,
   null,
@@ -2652,8 +2652,14 @@ QueryBuilderGroup_component.options.__file = "QueryBuilderGroup.vue"
 
 var defaultLabels = {
   matchType: "Тип соответствия",
-  matchTypeAll: "Все",
-  matchTypeAny: "Любой",
+  matchTypeAll: {
+    label: "Все",
+    value: 'All'
+  },
+  matchTypeAny: {
+    label: "Любой",
+    value: 'Any'
+  },
   addRule: "Добавить",
   removeRule: "&times;",
   addGroup: "Добавить группу",

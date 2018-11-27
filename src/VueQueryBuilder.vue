@@ -20,8 +20,8 @@ import deepClone from './utilities.js';
 
 var defaultLabels = {
   matchType: "Тип соответствия",
-  matchTypeAll: "Все",
-  matchTypeAny: "Любой",
+  matchTypeAll: { label: "Все", value: 'All' },
+  matchTypeAny: { label: "Любой", value: 'Any' },
   addRule: "Добавить",
   removeRule: "&times;",
   addGroup: "Добавить группу",
