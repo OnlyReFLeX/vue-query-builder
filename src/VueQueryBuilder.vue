@@ -19,14 +19,14 @@ import QueryBuilderGroup from './components/QueryBuilderGroup.vue';
 import deepClone from './utilities.js';
 
 var defaultLabels = {
-  matchType: "Match Type",
-  matchTypeAll: "All",
-  matchTypeAny: "Any",
-  addRule: "Add Rule",
+  matchType: "Тип соответствия",
+  matchTypeAll: "Все",
+  matchTypeAny: "Любой",
+  addRule: "Добавить",
   removeRule: "&times;",
-  addGroup: "Add Group",
+  addGroup: "Добавить группу",
   removeGroup: "&times;",
-  textInputPlaceholder: "value",
+  textInputPlaceholder: "значение",
 };
 
 export default {
@@ -67,12 +67,28 @@ export default {
       },
       ruleTypes: {
         "text": {
-          operators: ['equals','does not equal','contains','does not contain','is empty','is not empty','begins with','ends with'],
+          operators: [
+            { label: 'Равно', value: 'matches'},
+            { label: 'Не равно', value: 'does_not_match' },
+            { label: 'Содержит', value: 'contains' },
+            { label: 'Не содержит', value: 'does_not_contains' },
+            { label: 'Пустой', value: 'is_empty' },
+            { label: 'Не пустой', value: 'is_not_empty' },
+            { label: 'Начинается с', value: 'begins_with' },
+            { label: 'Заканчивается на', value: 'ends_with' },
+          ],
           inputType: "text",
           id: "text-field"
         },
         "numeric": {
-          operators: ['=','<>','<','<=','>','>='],
+          operators: [
+            { label: 'Равно', value: 'eq'},
+            { label: 'Не равно', value: 'not_eq' },
+            { label: 'Меньше', value: 'lt'},
+            { label: 'Меньше или равно', value: 'lteq'},
+            { label: 'Больше', value: 'gt'},
+            { label: 'Больше или равно', value: 'gteq'},
+          ],
           inputType: "number",
           id: "number-field"
         },
@@ -94,13 +110,16 @@ export default {
           id: "checkbox-field"
         },
         "select": {
-          operators: ['=','<>'],
+          operators: [
+            { label: 'Равно', value: 'eq'},
+            { label: 'Не равно', value: 'not_eq' }
+          ],
           choices: [],
           inputType: "select",
           id: "select-field"
         },
         "multi-select": {
-          operators: ['='],
+          operators: [{ label: 'Равно', value: 'eq'}],
           choices: [],
           inputType: "select",
           id: "multi-select-field"
