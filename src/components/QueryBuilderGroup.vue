@@ -81,7 +81,7 @@ export default {
         type: 'query-builder-rule',
         query: {
           rule: this.selectedRule.id,
-          selectedOperator: this.selectedRule.operators[0],
+          selectedOperator: this.selectedRule.operators[0].value,
           selectedOperand: typeof this.selectedRule.operands === "undefined" ? this.selectedRule.label : this.selectedRule.operands[0],
           value: null
         }
@@ -121,7 +121,7 @@ export default {
 
   data () {
     return {
-      selectedRule: this.rules[0].value
+      selectedRule: this.rules[0]
     }
   },
 
