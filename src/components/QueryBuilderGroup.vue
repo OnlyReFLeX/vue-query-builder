@@ -134,7 +134,7 @@ export default {
       classObject['depth-' + this.depth.toString()] = this.styled;
 
       return classObject;
-    }
+    },
   }
 }
 </script>

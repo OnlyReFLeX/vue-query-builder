@@ -68,29 +68,59 @@ export default {
       ruleTypes: {
         "text": {
           operators: [
-            { label: 'Равно', value: 'matches'},
-            { label: 'Не равно', value: 'does_not_match' },
             { label: 'Содержит', value: 'contains' },
             { label: 'Не содержит', value: 'does_not_contains' },
-            { label: 'Пустой', value: 'is_empty' },
-            { label: 'Не пустой', value: 'is_not_empty' },
+            { label: 'Равно', value: 'matches'},
+            { label: 'Не равно', value: 'does_not_match' },
             { label: 'Начинается с', value: 'begins_with' },
             { label: 'Заканчивается на', value: 'ends_with' },
+            { label: 'Пустой', value: 'is_empty' },
+            { label: 'Не пустой', value: 'is_not_empty' },
           ],
           inputType: "text",
           id: "text-field"
         },
         "numeric": {
           operators: [
-            { label: 'Равно', value: 'eq'},
+            { label: 'Равно', value: 'eq' },
             { label: 'Не равно', value: 'not_eq' },
-            { label: 'Меньше', value: 'lt'},
-            { label: 'Меньше или равно', value: 'lteq'},
-            { label: 'Больше', value: 'gt'},
-            { label: 'Больше или равно', value: 'gteq'},
+            { label: 'Меньше', value: 'lt' },
+            { label: 'Меньше или равно', value: 'lteq' },
+            { label: 'Больше', value: 'gt' },
+            { label: 'Больше или равно', value: 'gteq' },
+            { label: 'Пустой', value: 'is_empty' },
+            { label: 'Не пустой', value: 'is_not_empty' },
           ],
           inputType: "number",
           id: "number-field"
+        },
+        "date": {
+          operators: [
+            { label: 'Равно', value: 'eq' },
+            { label: 'Не равно', value: 'not_eq' },
+            { label: 'Меньше', value: 'lt' },
+            { label: 'Меньше или равно', value: 'lteq' },
+            { label: 'Больше', value: 'gt' },
+            { label: 'Больше или равно', value: 'gteq' },
+            { label: 'Пустой', value: 'is_empty' },
+            { label: 'Не пустой', value: 'is_not_empty' },
+          ],
+          inputType: "date",
+          id: "date-field"
+        },
+        "datetime": {
+          operators: [
+            { label: 'Равно', value: 'eq' },
+            { label: 'Не равно', value: 'not_eq' },
+            { label: 'Меньше', value: 'lt' },
+            { label: 'Меньше или равно', value: 'lteq' },
+            { label: 'Больше', value: 'gt' },
+            { label: 'Больше или равно', value: 'gteq' },
+            { label: 'Пустой', value: 'is_empty' },
+            { label: 'Не пустой', value: 'is_not_empty' },
+          ],
+          inputType: "datetime-local",
+          id: "datetime-field"
         },
         "custom": {
           operators: [],
@@ -111,7 +141,7 @@ export default {
         },
         "select": {
           operators: [
-            { label: 'Равно', value: 'eq'},
+            { label: 'Равно', value: 'eq' },
             { label: 'Не равно', value: 'not_eq' }
           ],
           choices: [],
@@ -119,7 +149,7 @@ export default {
           id: "select-field"
         },
         "multi-select": {
-          operators: [{ label: 'Равно', value: 'eq'}],
+          operators: [{ label: 'Равно', value: 'eq' }],
           choices: [],
           inputType: "select",
           id: "multi-select-field"
